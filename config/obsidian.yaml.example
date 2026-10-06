@@ -1,0 +1,11 @@
+# Copy this to:
+# ~/.config/tunnel-client/obsidian.yaml
+#
+# IMPORTANT:
+# This is a template only. Do not paste credentials here unless you know
+# exactly what the tunnel-client expects.
+#
+# Keep your existing working obsidian.yaml if you already have one.
+#
+# The exact schema depends on the tunnel-client version and your current
+# MCP Tunnel configuration.
