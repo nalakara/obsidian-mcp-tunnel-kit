@@ -1,0 +1,32 @@
+config_version: 1
+
+# Machine-specific tunnel configuration.
+# Do not commit a populated copy of this file.
+# Keep this file at:
+#   ~/.config/tunnel-client/obsidian-autostart.yaml
+
+control_plane:
+  base_url: "https://api.openai.com"
+  tunnel_id: "REPLACE_WITH_YOUR_TUNNEL_ID"
+  # Required by tunnel-client. Never commit a real key here.
+  api_key: "REPLACE_WITH_YOUR_CONTROL_PLANE_KEY"
+
+health:
+  listen_addr: "127.0.0.1:8080"
+
+admin_ui:
+  open_browser: false
+
+log:
+  level: info
+  format: json
+
+mcp:
+  server_urls:
+    - channel: main
+      url: "http://127.0.0.1:27125/mcp/"
+  # Required by the MCP endpoint. Never commit a real key here.
+  extra_headers:
+    Authorization: "Bearer REPLACE_WITH_YOUR_OBSIDIAN_API_KEY"
+  discovery_extra_headers:
+    Authorization: "Bearer REPLACE_WITH_YOUR_OBSIDIAN_API_KEY"
